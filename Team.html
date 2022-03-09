@@ -5,6 +5,20 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
     <title>HTML Final Project</title>
   </head>
+  <style>
+    table {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+  </style>
   <body>
     <header>
       <h1>Los Angeles Clippers</h1>
@@ -19,6 +33,7 @@
         height="175px"
       />
     </header>
+    <main>
       <p>The Los Angeles Clippers are my favourite team NBA Team</p>
       <p>
         Last season they made the conference finals for the first time in
@@ -37,12 +52,13 @@
       </iframe>
       <h2>Roster</h2>
       <p>Here is some of my favourite players from the team!</p>
-      <img src="Images/Clippers Roster.jpg" 
-        alt="Picture of Reggie Jackson, Paul George, Terance Mann, Marcus Morris sr huddled up" 
-        width="45%" 
-        height="45%"
+      <img
+        src="Images/Clippers Roster.jpg"
+        alt="Picture of Reggie Jackson, Paul George, Terance Mann, Marcus Morris sr huddled up"
+        width="35%"
+        height="35%"
       />
-      <table style="width: 50%;">
+      <table style="width: 50%">
         <tr>
           <th>First Name</th>
           <th>Last Name</th>
@@ -74,5 +90,30 @@
           <td>Guard/Forward</td>
         </tr>
       </table>
+
+      <h2>Favourite Player</h2>
+      <p>
+        Feel free to fill out this form to tell me what is your favourite player
+        on the clippers!
+      </p>
+      <!-- This is a form that will make a user input what their favourite player is on the clippers -->
+      <fieldset>
+        <form name="favourite-player-form" id="player-form" method="get">
+          <!-- This input and label is used to gather the name of the users favourite pla -->
+          <label for="pname">Favourite Player:</label>
+          <input type="text" id="pname" name="pname" /><br /><br />
+          <!-- This input and label is used to gather the URL to a highlight video of the users favourite player -->
+          <label for="phighlights">Insert URL of their Highlights here:</label>
+          <input type="url" id="phighlights" name="phighlights" /><br /><br />
+          <!-- This input and label is used to gather the users rating of the highlight video they submitted -->
+          <label for="hrating">How would you rate the higlights?:</label>
+          <input type="number" id="hrating" name="hrating" min="1" max="5" />
+          <br />
+          <br />
+          <!-- This input is used to submit the form -->
+          <input type="submit" value="submit" />
+        </form>
+      </fieldset>
+    </main>
   </body>
 </html>
