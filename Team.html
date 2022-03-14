@@ -29,8 +29,8 @@
     <header>
       <h1>Los Angeles Clippers</h1>
       <nav>
-        <a href="Index.html">Home Page</a>
-        <a href="Team.html">Favourite team</a>
+        <a href="index.html">Home Page</a>
+        <a href="team.html">Favourite team</a>
       </nav>
       <img
         src="Images/Los-Angeles-Clippers logo.png"
@@ -110,9 +110,12 @@
           <input type="text" id="pname" name="pname" /><br /><br />
           <!-- This input and label is used to gather the URL to a highlight video of the users favourite player -->
           <label for="phighlights">Insert URL of their Highlights here:</label>
-          <input type="url" id="phighlights" name="phighlights" /><br /><br />
+          <input type="url" id="phighlights" name="phighlights" size="75px" />
+          <br /><br />
           <!-- This input and label is used to gather the users rating of the highlight video they submitted -->
-          <label for="hrating">How would you rate the higlights?:</label>
+          <label for="hrating">
+            How would you rate the higlights on a scale from one to five?:
+          </label>
           <input type="number" id="hrating" name="hrating" min="1" max="5" />
           <br />
           <br />
